@@ -7,11 +7,11 @@ module InlineData
     protected
 
     def load
-      ::JSON::load @file
+      ::JSON.load @file
     end
 
     def dump
-      ::JSON::generate @data
+      ::JSON.generate @data
     end
   end
 end

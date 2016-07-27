@@ -7,11 +7,11 @@ module InlineData
     protected
 
     def load
-      ::YAML::load @file
+      ::YAML.load @file
     end
-    
+
     def dump
-      ::YAML::dump @data
+      ::YAML.dump @data
     end
   end
 end
